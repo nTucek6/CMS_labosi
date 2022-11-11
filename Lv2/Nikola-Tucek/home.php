@@ -14,15 +14,15 @@ if(get_the_post_thumbnail_url())
 {
 echo '<div class="d-flex justify-content-center"><img height="300" width="500"  src="'.get_the_post_thumbnail_url().'"/></div>';
 }
-echo '<p class="d-flex justify-content-center">'.get_the_date().'</p>';
+
+echo '<p class="d-flex justify-content-center text-muted">'.get_the_date().'</p>';
 echo '</div> <br /> <hr> <br />';
 }
 }
 ?>
-
 <div class="d-flex justify-content-center">
    <?php //posts_nav_link(' — ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
-   <?php previous_posts_link("<button class='btn btn-secondary m-1'>Previous</button>");  ?>
+   <?php previous_posts_link("<button class='btn btn-secondary  m-1'>Previous</button>");  ?>
    <?php next_posts_link("<button class='btn btn-secondary m-1'>Next</button>");  ?>
 </div>
 </main>

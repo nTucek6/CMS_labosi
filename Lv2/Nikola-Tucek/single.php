@@ -15,6 +15,7 @@ if(get_the_post_thumbnail_url())
 echo '<div class="d-flex justify-content-center"><img height="300" width="500" src="'.get_the_post_thumbnail_url().'"/></div> <br />';
 }
 echo '<div style="text-align:center;">'.$post->post_content . '</div>';
+echo '<p class="text-muted" style="text-align:right;">Objavljeno: '.get_the_date().'</p>';
 echo '</div> <br />';
 }
 }

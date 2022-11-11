@@ -14,7 +14,7 @@ if ( $gallery = get_post_gallery( get_the_ID(), false ) ){
 
     foreach ( $gallery['src'] as $src ) {
         ?>                
-        <img width="200" height="200" src="<?php echo $src; ?>" class="my-custom-class" alt="Gallery image" />
+        <img class="m-1" width="200" height="200" src="<?php echo $src; ?>" class="my-custom-class" alt="Gallery image" />
 <?php
 }
 }

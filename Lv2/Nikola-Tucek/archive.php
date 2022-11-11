@@ -14,7 +14,8 @@ if(get_the_post_thumbnail_url())
 {
 echo '<div class="d-flex justify-content-center"><img height="300" width="500" src="'.get_the_post_thumbnail_url().'"/></div>';
 }
-echo '<br />';
+echo '<p class="d-flex justify-content-center text-muted">'.get_the_date().'</p>';
+echo '<br /> <hr> <br />';
 }
 }
 ?>
