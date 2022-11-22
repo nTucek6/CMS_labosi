@@ -80,7 +80,7 @@ if(!empty($info->profesori))
     {
         echo '<div class="mr-2">';
         echo '<img src="'.get_the_post_thumbnail_url($nastavnik->ID).'"  width="100" height="100" />';
-        echo '<p>'.$nastavnik->post_title.'</p>';
+        echo '<p><a href="'.$nastavnik->guid.'">'.$nastavnik->post_title.'</a></p>';
         echo '</div>';
     }
     echo '</div>';
